@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn --host 0.0.0.0 --app-dir=app main:app --reload
+    ports:
+      - "8000:8000"
