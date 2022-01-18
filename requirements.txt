@@ -6,3 +6,4 @@ torch
 fastapi
 pydantic
 python-multipart
+gunicorn
