@@ -26,7 +26,6 @@ COCO_INSTANCE_CATEGORY_NAMES = [
     'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'N/A', 'book',
     'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
 ]
-model.load_state_dict(torch.load('models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth'))
 model.eval()
 
 def read_imagefile(file) -> Image.Image:
